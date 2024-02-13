@@ -338,12 +338,12 @@ commitlog_total_space_in_mb: -1
 
 # TCP port, for commands and data
 # For security reasons, you should not expose this port to the internet.  Firewall it if needed.
-# storage_port: 7000
+storage_port: 7000
 
 # SSL port, for encrypted communication.  Unused unless enabled in
 # encryption_options
 # For security reasons, you should not expose this port to the internet.  Firewall it if needed.
-# ssl_storage_port: 7001
+ssl_storage_port: 7001
 
 # listen_interface: eth0
 # listen_interface_prefer_ipv6: false
@@ -351,14 +351,14 @@ commitlog_total_space_in_mb: -1
 # Whether to start the native transport server.
 # Please note that the address on which the native transport is bound is the
 # same as the rpc_address. The port however is different and specified below.
-# start_native_transport: true
+start_native_transport: true
 
 # The maximum size of allowed frame. Frame (requests) larger than this will
 # be rejected as invalid. The default is 256MB.
 # native_transport_max_frame_size_in_mb: 256
 
 # Whether to start the thrift rpc server.
-# start_rpc: true
+start_rpc: true
 
 # enable or disable keepalive on rpc/native connections
 # rpc_keepalive: true
