@@ -49,8 +49,8 @@ Defines inventory settings, and SSH configurations.
 
 ```ini
 [defaults]
-inventory               =       /home/parsu/ansible/aws_ec2.yaml
-private_key_file        =       /home/parsu/Downloads/ninja.pem
+inventory               =       /home/ubuntu/scylla-ansible-role/aws_ec2.yaml
+private_key_file        =       /home/ubuntu/scylla-ansible-role/snaatak.pem
 remote_user             =       ubuntu
 host_key_checking       =       False
 
@@ -106,7 +106,9 @@ ansible-galaxy init <role_name>
 ![image](https://github.com/avengers-p7/Documentation/assets/156056709/80b46007-bed0-4eea-9d4e-994656258434)
 
 
-![image](https://github.com/avengers-p7/Documentation/assets/156056709/fa26f123-6015-4b58-8def-cbe69d6dc673)
+![image](https://github.com/Parasharam-Desai/scylla-ansible-role/assets/156056709/0cbfbc2a-a9c2-491d-ab48-fe16262a1970)
+
+
 
 
 **Step 4: playbook.yml**
@@ -295,19 +297,23 @@ Configuration Parameters
 
 **Step 7: Playbook Execution**
 
-* To set up ScyllaDB on your target servers, you will execute the Ansible playbook using the following command:
+* To set up ScyllaDB on your target servers, you will execute the Ansible playbook using the following command: Ensure that when you run your Ansible role, you execute the command outside of the role. 
 
 ```bash
-ansible-playbook scylla-ansible-role/tests/test.yml
+ansible-playbook master.yml
 ```
+**Directory Structure**
+
 ***
 # Evaluate Output
 
 * During the evaluation of output, we utilize the register and debug modules to verify whether our Ansible role is functioning correctly or not. In the image below, you will observe the output and status of the node.
 
-![image](https://github.com/avengers-p7/Documentation/assets/156056709/e097d239-e38e-4973-b936-8658c16072cb)
+![image](https://github.com/Parasharam-Desai/scylla-ansible-role/assets/156056709/1470d787-c8e5-4d5b-923e-0ac5a5ff1026)
 
-![image](https://github.com/avengers-p7/Documentation/assets/156056709/459a0f88-2955-4d28-9467-69596386e5bc)
+
+![image](https://github.com/Parasharam-Desai/scylla-ansible-role/assets/156056709/3dbdade8-3fa9-4d59-87e0-192b431c0195)
+
 
 ***
 # Conclusion
