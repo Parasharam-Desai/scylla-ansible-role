@@ -37,6 +37,10 @@ going to Setup a single Node server of Scylladb using dynamic inventory.
 
 Please ensure you have access to an AWS account for deployment purposes in addition to Ansible and a private key for SSH authentication.
 
+# Flow Diagram 
+
+![image](https://github.com/Parasharam-Desai/scylla-ansible-role/assets/156056709/a2a3ffd6-c1e8-4353-b913-f0cab55728e4)
+
 
 ***
 # Steps
